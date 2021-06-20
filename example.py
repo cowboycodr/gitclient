@@ -1,11 +1,14 @@
 from src.main import clone_repos
 
-# All github repo clones below
+# cloning repos
 
 repos = [
-    'https://github.com/cowboycodr/cowboycodr.github.io'
+    'https://github.com/cowboycodr/gitclient'
 ]
 
 clone_repos(repos)
 
-# Import from cloned dirs
+# import from repos outdir
+from output.gitclient.src.main import clone
+
+clone('https://github.com/cowboycodr/fileengine')
